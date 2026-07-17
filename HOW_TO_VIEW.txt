@@ -1,0 +1,31 @@
+﻿HOW TO SEE THE BRANDING CHOICES
+===============================
+
+1) BEST — local server (fonts load correctly)
+   In a browser address bar, go to:
+
+   http://127.0.0.1:8765/branding.html
+
+   If that fails, open PowerShell and run:
+   cd C:\historiens_occidentaux\project\website
+   python -m http.server 8765
+   Then open the link above.
+
+2) ALSO WORKS — open the file directly
+   In File Explorer go to:
+   C:\historiens_occidentaux\project\website\
+   Double-click: branding.html
+
+3) NOT YET — openchronicles.org
+   DNS is not pointed at GitHub yet, so the public domain will not show the site.
+   GitHub Pages also redirects to that domain, so use option 1 for now.
+
+On the branding page you will see:
+  - Wordmarks A–D
+  - Color palettes 1–3
+  - Logo mark images
+  - Sample book pages (format A/B/C)
+  - Body font specimens
+
+Home page of the skeleton:
+  http://127.0.0.1:8765/

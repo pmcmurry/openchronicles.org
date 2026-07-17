@@ -115,10 +115,19 @@ a:hover {
 
 .brand {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.55rem;
   text-decoration: none;
   color: inherit;
+}
+
+.brand__logo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2px;
+  border: 1px solid var(--oc-rule);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .brand__mark {
@@ -706,4 +715,158 @@ a:hover {
   font-family: var(--oc-font-display);
   margin: 0 0 0.4rem;
   font-size: 1.25rem;
+}
+
+/* Sample book pages on branding.html */
+.sample-page {
+  aspect-ratio: 6 / 9;
+  max-width: 100%;
+  border: 1px solid var(--oc-rule);
+  box-shadow: 0 8px 24px var(--oc-shadow);
+  padding: 9% 10% 12%;
+  position: relative;
+  overflow: hidden;
+}
+
+.sample-page__run {
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.55;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.sample-page__title {
+  font-size: 1.05rem;
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.sample-page__body {
+  font-size: 0.62rem;
+  line-height: 1.45;
+  text-align: justify;
+}
+
+.sample-page__body p {
+  margin: 0 0 0.5em;
+  text-indent: 0.9em;
+  color: inherit;
+}
+
+.sample-page__body p:first-child {
+  text-indent: 0;
+}
+
+.sample-page__folio {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.55rem;
+  opacity: 0.5;
+}
+
+.sample-page--a {
+  background: #fbf7ef;
+  color: #1f1a17;
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+.sample-page--a .sample-page__title {
+  font-family: "Cormorant Garamond", serif;
+  color: #6b2e2e;
+  text-align: center;
+}
+
+.sample-page--a .sample-page__run {
+  color: #6b2e2e;
+  border-color: #c4b8a6;
+}
+
+.sample-page--b {
+  background: #faf9f7;
+  color: #1a1c1e;
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.sample-page--b .sample-page__title {
+  font-size: 0.95rem;
+  border-bottom: 1px solid #d0ccc4;
+  padding-bottom: 0.4rem;
+}
+
+.sample-page--b .sample-page__run {
+  font-family: "Source Sans 3", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.sample-page--c {
+  background: #f3efe6;
+  color: #221c16;
+  font-family: "Libre Baskerville", Georgia, serif;
+}
+
+.sample-page--c .sample-page__title {
+  font-family: "EB Garamond", serif;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #5c2a2a;
+  font-size: 0.95rem;
+}
+
+.sample-page--c .sample-page__run {
+  font-variant: small-caps;
+  letter-spacing: 0.14em;
+  color: #8a7348;
+  border-color: #c4b8a6;
+}
+
+.sample-page--c .sample-page__body {
+  font-size: 0.58rem;
+  line-height: 1.55;
+}
+
+.specimen-title {
+  font-size: 1.55rem;
+  line-height: 1.15;
+  margin: 0.35rem 0 0.5rem;
+  color: var(--oc-ink);
+}
+
+.specimen-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--oc-ink-soft);
+}
+
+.specimen-eb .specimen-title,
+.specimen-eb .specimen-text {
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+.specimen-source .specimen-title,
+.specimen-source .specimen-text {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.specimen-bask .specimen-title,
+.specimen-bask .specimen-text {
+  font-family: "Libre Baskerville", Georgia, serif;
+}
+
+.specimen-corm .specimen-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.75rem;
+}
+
+.specimen-corm .specimen-text {
+  font-family: "Source Serif 4", Georgia, serif;
 }
