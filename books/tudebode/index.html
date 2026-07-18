@@ -19,6 +19,30 @@
     .colophon .muted { color: var(--oc-muted); }
     .edition-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.9rem; }
     .edition-meta { font-size: 0.8rem; color: var(--oc-muted); margin-top: 0.7rem; }
+    .colophon-details { margin: 0; }
+    .colophon-details > summary {
+      font-family: var(--oc-font-display);
+      color: var(--oc-rubric);
+      cursor: pointer;
+      list-style: none;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--oc-rule);
+      border-radius: 2px;
+      background: var(--oc-white);
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .colophon-details > summary::-webkit-details-marker { display: none; }
+    .colophon-details > summary::before {
+      content: "▸ ";
+      font-size: 0.85em;
+      color: var(--oc-muted);
+    }
+    .colophon-details[open] > summary {
+      margin-bottom: 0.75rem;
+      border-color: var(--oc-rubric);
+    }
+    .colophon-details[open] > summary::before { content: "▾ "; }
   </style>
 </head>
 <body>
@@ -62,8 +86,7 @@
           <a class="btn btn--primary" href="the-journey-to-jerusalem.html">Read online</a>
           <a class="btn btn--ghost" href="the-journey-to-jerusalem-1.0.0.pdf">PDF (6×9″)</a>
         </div>
-        <p class="edition-meta">Version 1.0.0 · 2026-07-17 · CC BY 4.0<br>
-        Translated from the Latin with AI assistance, edited by Paul McMurry</p>
+        <p class="edition-meta">Version 1.0.0 · 2026-07-17 · CC BY 4.0</p>
       </article>
       <article class="card edition--reader">
         <span class="badge">Reader’s edition</span>
@@ -77,8 +100,7 @@
           <a class="btn btn--primary" href="the-road-to-jerusalem.html">Read online</a>
           <a class="btn btn--ghost" href="the-road-to-jerusalem-1.0.0.pdf">PDF (6×9″)</a>
         </div>
-        <p class="edition-meta">Version 1.0.0 · 2026-07-17 · CC BY 4.0<br>
-        Adapted for modern readers with AI assistance, edited by Paul McMurry</p>
+        <p class="edition-meta">Version 1.0.0 · 2026-07-17 · CC BY 4.0</p>
       </article>
     </div>
 
@@ -95,8 +117,8 @@
         Both editions were prepared with AI assistance and human editing, without consulting the
         1974 English translation by John Hugh and Laurita L. Hill at any stage; a post hoc comparison
         against Hill &amp; Hill is documented separately. See <a href="../../method.html">Method</a>
-        for how Open Chronicles editions are made, and the colophons below for sources, versions,
-        and known limitations.
+        for how Open Chronicles editions are made, and expand the colophons below for sources,
+        versions, and known limitations.
       </p>
       <h2>Colophons</h2>
       <p class="muted" style="font-size:0.9rem">Found an error? Report it via the
@@ -105,6 +127,8 @@
     </div>
 
     <div class="grid-2" style="margin-top:1rem">
+      <details class="colophon-details">
+        <summary>Full colophon &amp; suggested citation — The Journey to Jerusalem</summary>
       <aside class="colophon" aria-label="Colophon">
 <p class="colophon__series">Open Chronicles · Volume 1</p>
 <p class="colophon__title"><strong>Historia de Hierosolymitano itinere</strong></p>
@@ -132,6 +156,9 @@
 <p class="colophon__url"><a href="https://openchronicles.org/books/tudebode/">https://openchronicles.org/books/tudebode/</a></p>
 <p class="colophon__footer">Open Chronicles · CC BY 4.0 · Paul McMurry · openchronicles.org</p>
 </aside>
+      </details>
+      <details class="colophon-details">
+        <summary>Full colophon &amp; suggested citation — The Road to Jerusalem</summary>
       <aside class="colophon" aria-label="Colophon">
 <p class="colophon__series">Open Chronicles · Volume 1</p>
 <p class="colophon__title"><strong>The Road to Jerusalem</strong></p>
@@ -158,6 +185,7 @@
 <p class="colophon__url"><a href="https://openchronicles.org/books/tudebode/">https://openchronicles.org/books/tudebode/</a></p>
 <p class="colophon__footer">Open Chronicles · CC BY 4.0 · Paul McMurry · openchronicles.org</p>
 </aside>
+      </details>
     </div>
   </main>
 

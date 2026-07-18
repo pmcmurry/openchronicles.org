@@ -2,7 +2,8 @@
 
 Repo: https://github.com/pmcmurry/openchronicles.org  
 Pages source: `master` branch, root  
-CNAME file: `openchronicles.org`
+CNAME file: `openchronicles.org`  
+DNS host: **Cloudflare** (zone for openchronicles.org)
 
 ## Temporary URL (works before custom DNS)
 
@@ -12,7 +13,7 @@ https://pmcmurry.github.io/openchronicles.org/
 
 ## Apex domain records
 
-At your registrar (wherever you bought openchronicles.org), set:
+In Cloudflare DNS (or at your registrar if nameservers point elsewhere), set:
 
 ### Option A — recommended for apex
 
@@ -46,6 +47,33 @@ nslookup openchronicles.org
 curl -I https://openchronicles.org
 ```
 
+## Email (Cloudflare Email Routing)
+
+Inbound contact: **paul@openchronicles.org** → forwards to **pmcmurry@gmail.com**.
+
+Managed in Cloudflare → Email Service → Email Routing. DNS records for routing are typically **Locked** by Email Routing — do not delete them when editing site DNS.
+
+| Type | Name | Value | Notes |
+|------|------|--------|--------|
+| **MX** | `@` | `route2.mx.cloudflare.net` | Priority 9 (typical) |
+| **MX** | `@` | `route3.mx.cloudflare.net` | Priority 73 (typical) |
+| **MX** | `@` | `route1.mx.cloudflare.net` | Priority 89 (typical) |
+| **TXT** | `@` | `v=spf1 include:_spf.mx.cloudflare.net ~all` | Single SPF only; merge later providers into this one record |
+
+Routing rule: custom address `paul` → destination `pmcmurry@gmail.com`.
+
+Outbound “Send mail as” from Gmail is **not** configured yet (needs an SMTP provider and SPF merge). Site A/`www` records are independent of MX/TXT.
+
+### Verify email DNS
+
+```bash
+nslookup -type=MX openchronicles.org
+# should show route*.mx.cloudflare.net
+
+nslookup -type=TXT openchronicles.org
+# should include SPF with _spf.mx.cloudflare.net
+```
+
 ## Note
 
-Remove any parking page or placeholder A/CNAME records from the registrar so they don’t conflict.
+Remove any parking page or placeholder A/CNAME records from the registrar so they don’t conflict. Do not remove Email Routing MX/TXT while inbound mail is in use.
