@@ -1,0 +1,7 @@
+# GitHub Pages uses Jekyll only to exclude repository documentation from the public artifact.
+# The HTML and CSS files remain static and require no build step.
+exclude:
+  - DNS.md
+  - HOW_TO_VIEW.txt
+  - README.md
+  - SITE_CLEANUP_REPORT.md
