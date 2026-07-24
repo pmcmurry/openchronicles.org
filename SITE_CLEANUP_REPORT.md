@@ -23,7 +23,7 @@ An independent review found and fixed several items the first pass missed:
 - the W3C validator found invalid ARIA/heading markup in the brand archive and one mis-nested emphasis tag in the source-faithful glossary;
 - .nojekyll caused repository documentation and operational notes to be served as site files.
 
-All known local link, fragment, HTML validation, targeted accessibility, responsive layout, PDF consistency, and publication-text safeguards now pass. Peter Tudebode remains the only published project. Fidentius of Padua, Robert of Auxerre, and William of Tyre remain clearly labeled "In preparation."
+All known local link, fragment, HTML validation, targeted accessibility, responsive layout, PDF consistency, and publication-text safeguards now pass. Peter Tudebode remains the only published project. Robert of Auxerre and William of Tyre remain clearly labeled "In preparation."
 
 ## 2. Confirmed problems found
 
@@ -79,7 +79,7 @@ Unchanged publication artifacts: both PDFs, image assets, CNAME, DNS.md, robots.
 ### Content and status
 
 - Tudebode is labeled Published.
-- Fidentius, Robert of Auxerre, and William of Tyre remain non-clickable In preparation rows.
+- Robert of Auxerre and William of Tyre remain non-clickable In preparation rows.
 - About, Method, License, and Home now describe the active publication in the present tense.
 - About now assigns the translation credit specifically to source-faithful translations.
 - License supplies distinct source-faithful and reader's-edition attribution forms.
