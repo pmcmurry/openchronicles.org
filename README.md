@@ -31,6 +31,8 @@ Open http://localhost:8080
 | `books/tudebode/the-road-to-jerusalem.html` | Reader’s browser edition |
 | `books/yahya-al-hakim/` | Volume 2 landing page |
 | `books/yahya-al-hakim/the-caliphate-of-al-hakim.html` | Volume 2 source-faithful browser edition |
+| `books/yahya-eastern-frontier/` | Volume 3 landing page |
+| `books/yahya-eastern-frontier/the-eastern-frontier.html` | Volume 3 source-faithful browser edition |
 | `404.html` | Custom not-found page (GitHub Pages) |
 
 `branding.html` is an internal brand archive and is not listed in `sitemap.xml`.
