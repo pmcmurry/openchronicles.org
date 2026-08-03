@@ -33,6 +33,11 @@ Open http://localhost:8080
 | `books/yahya-al-hakim/the-caliphate-of-al-hakim.html` | Volume 2 source-faithful browser edition |
 | `books/yahya-eastern-frontier/` | Volume 3 landing page |
 | `books/yahya-eastern-frontier/the-eastern-frontier.html` | Volume 3 source-faithful browser edition |
+| `books/gesta-francorum/` | Volume 4 landing page |
+| `books/gesta-francorum/the-deeds-of-the-franks.html` | Volume 4 source-faithful browser edition |
+| `books/john-the-oxite/` | Volume 5 landing page |
+| `books/john-the-oxite/speech-1-to-alexios.html` | Volume 5 source-faithful browser edition |
+| `books/john-the-oxite/john-the-oxite-speech-1.html` | Volume 5 reader’s browser edition |
 | `404.html` | Custom not-found page (GitHub Pages) |
 
 `branding.html` is an internal brand archive and is not listed in `sitemap.xml`.
