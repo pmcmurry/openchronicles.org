@@ -38,6 +38,8 @@ Open http://localhost:8080
 | `books/john-the-oxite/` | Volume 5 landing page |
 | `books/john-the-oxite/speech-1-to-alexios.html` | Volume 5 source-faithful browser edition |
 | `books/john-the-oxite/john-the-oxite-speech-1.html` | Volume 5 reader’s browser edition |
+| `books/robert-the-monk/` | Volume 6 landing page |
+| `books/robert-the-monk/the-history-of-jerusalem.html` | Volume 6 source-faithful browser edition |
 | `404.html` | Custom not-found page (GitHub Pages) |
 
 `branding.html` is an internal brand archive and is not listed in `sitemap.xml`.
