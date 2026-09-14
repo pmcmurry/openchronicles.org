@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Robert the Monk — The History of Jerusalem — Open Chronicles</title>
-  <meta name="description" content="Robert the Monk, Historia Iherosolimitana: source-faithful English translation from RHC Occidentaux III (1866), printed pages 721–882.">
+  <title>Robert the Monk — Historia Iherosolimitana — Open Chronicles</title>
+  <meta name="description" content="Robert the Monk, Historia Iherosolimitana: source-faithful English translation from RHC Occidentaux III (1866) and a narrative reader’s edition.">
   <link rel="stylesheet" href="../../css/site.css">
   <link rel="icon" href="../../favicon.ico" sizes="any">
   <link rel="canonical" href="https://openchronicles.org/books/robert-the-monk/">
@@ -13,13 +13,16 @@
     "@context": "https://schema.org",
     "@type": "Book",
     "name": "Historia Iherosolimitana",
-    "alternateName": "The History of Jerusalem",
+    "alternateName": ["The History of Jerusalem"],
     "author": {"@type": "Person", "name": "Robert the Monk"},
     "editor": {"@type": "Person", "name": "Paul McMurry"},
     "inLanguage": "en",
     "license": "https://creativecommons.org/licenses/by/4.0/",
-    "version": "1.0.0",
-    "url": "https://openchronicles.org/books/robert-the-monk/"
+    "url": "https://openchronicles.org/books/robert-the-monk/",
+    "workExample": [
+      {"@type": "Book", "name": "Historia Iherosolimitana", "bookFormat": "https://schema.org/EBook", "version": "1.0.0", "url": "https://openchronicles.org/books/robert-the-monk/the-history-of-jerusalem.html"},
+      {"@type": "Book", "name": "The History of Jerusalem", "bookFormat": "https://schema.org/EBook", "version": "1.0.0", "url": "https://openchronicles.org/books/robert-the-monk/the-history-of-jerusalem-readers.html"}
+    ]
   }
   </script>
   <style>
@@ -47,27 +50,42 @@
       <h1><em lang="la">Historia Iherosolimitana</em></h1>
       <p class="deck"><strong>The History of Jerusalem</strong><br>
         Robert the Monk · RHC Occidentaux III (1866), printed pp. 721–882.
+        Published in two editions.
       </p>
     </header>
-    <article class="card">
+    <div class="grid-2">
+    <article class="card edition--faithful">
       <span class="badge">Source-faithful translation</span>
       <h2 style="font-family:var(--oc-font-display);font-size:1.45rem;font-weight:600;margin:0.35rem 0 0.45rem">The History of Jerusalem</h2>
-      <p>Reading translation from the 1866 Recueil print of Robert’s history of the Jerusalem journey, with RHC page citations, notes, and a glossary. Not a critical edition of the Latin.</p>
+      <p>Reading translation from the 1866 Recueil print of Robert’s history of the Jerusalem journey, with RHC page citations, notes, and a glossary. Prefer this edition for citation of exact wording.</p>
       <div class="edition-actions">
         <a class="btn btn--primary" href="the-history-of-jerusalem.html">Read online</a>
         <a class="btn btn--ghost" href="the-history-of-jerusalem-1.0.0.pdf">PDF (6×9″)</a>
       </div>
       <p class="edition-meta">Version 1.0.0 · 2026-09-13 · CC BY 4.0</p>
     </article>
+    <article class="card edition--reader">
+      <span class="badge">Reader’s edition · narrative</span>
+      <h2 style="font-family:var(--oc-font-display);font-size:1.45rem;font-weight:600;margin:0.35rem 0 0.45rem">The History of Jerusalem</h2>
+      <p>The same history retold as continuous narrative, based on the source-faithful translation. Nothing invented, nothing softened — repetition condensed and the story built for modern reading.</p>
+      <div class="edition-actions">
+        <a class="btn btn--primary" href="the-history-of-jerusalem-readers.html">Read online</a>
+        <a class="btn btn--ghost" href="the-history-of-jerusalem-readers-1.0.0.pdf">PDF (6×9″)</a>
+      </div>
+      <p class="edition-meta">Version 1.0.0 · 2026-09-13 · CC BY 4.0 · based_on translation@1.0.0</p>
+    </article>
+    </div>
     <div class="prose" style="margin-top:2.5rem">
       <h2>About this work</h2>
       <p>Robert, a monk of a cell of Saint Remigius at Reims, wrote the <em>Historia Iherosolimitana</em> from the council of Clermont through the taking of Jerusalem and the close of book nine. He says an abbot named Bernard set him to put a head on a headless history and to write it more carefully.</p>
-      <p>Translated from Latin with AI assistance; edited by Paul McMurry. No existing English translation of Robert was used as a source. Kempf &amp; Bull 2013 was not opened.</p>
+      <p>Translated from Latin with AI assistance; edited by Paul McMurry. No existing English translation of Robert was used as a source. Kempf &amp; Bull 2013 was not opened. The reader’s edition is adapted from the source-faithful freeze; it is not a second translation from the Latin.</p>
       <h2>Version history</h2>
-      <p>Source-faithful translation: <strong>1.0.0</strong>. Corrections on the <a href="../../corrections.html">Corrections</a> page.</p>
+      <p>Source-faithful translation: <strong>1.0.0</strong>.
+      Reader’s edition: <strong>1.0.0</strong>.
+      Corrections on the <a href="../../corrections.html">Corrections</a> page.</p>
     </div>
-    <details class="colophon-details" style="margin:1.5rem 0 3rem">
-      <summary>Full colophon and suggested citation</summary>
+    <details class="colophon-details" style="margin:1.5rem 0 1rem">
+      <summary>Colophon — source-faithful translation</summary>
       <aside class="colophon" aria-label="Colophon">
 <p class="colophon__series">Open Chronicles · Volume 6</p>
 <p class="colophon__title"><strong>Historia Iherosolimitana</strong></p>
@@ -88,6 +106,35 @@
 <p>Translation-base is the diplomatic RHC text; Kempf &amp; Bull 2013 was not opened. RHC chapter divisions are production units, not a claim of Robert’s original chaptering. One verse reading remains marked uncertain (levis / bevis). This release has not undergone external scholarly peer review.</p></div>
 <div class="colophon__block"><h3>Suggested citation</h3>
 <p class="colophon__citation">Historia Iherosolimitana — The History of Jerusalem (source-faithful translation), translated from the Latin with AI assistance, edited by Paul McMurry. Open Chronicles, volume 6, version 1.0.0, 2026. https://openchronicles.org/books/robert-the-monk/ CC BY 4.0.</p></div>
+<p class="colophon__license">License: <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+<p class="colophon__copyright muted">Published as a human-edited edition prepared with AI assistance under CC BY 4.0.</p>
+<p class="colophon__version">Version 1.0.0 · 2026-09-13</p>
+<p class="colophon__url"><a href="https://openchronicles.org/books/robert-the-monk/">https://openchronicles.org/books/robert-the-monk/</a></p>
+<p class="colophon__footer">Open Chronicles · CC BY 4.0 · Paul McMurry · openchronicles.org</p>
+</aside>
+    </details>
+    <details class="colophon-details" style="margin:0 0 3rem">
+      <summary>Colophon — reader’s edition</summary>
+      <aside class="colophon" aria-label="Colophon">
+<p class="colophon__series">Open Chronicles · Volume 6</p>
+<p class="colophon__title"><strong>The History of Jerusalem</strong></p>
+<p class="colophon__subtitle">Robert the Monk’s chronicle of the Jerusalem journey, retold for modern readers</p>
+<p class="colophon__edition">Reader's edition</p>
+<p class="colophon__original colophon__latin"><span class="colophon__author">Robert the Monk (Robertus Monachus)</span><br><em lang="la" dir="ltr">Historia Iherosolimitana</em></p>
+<div class="colophon__block">
+<h3>Source</h3>
+<p>Adapted from the Open Chronicles source-faithful translation of Robert the Monk,<br>itself based on Recueil des historiens des croisades: Historiens occidentaux,<br>tome III (Paris, Imprimerie impériale, 1866), Roberti Monachi Historia<br>Iherosolimitana, printed pp. 721–882. Diplomatic transcription verified<br>on the page images of that volume. Readers who need Robert’s every sentence<br>should use the source-faithful translation.</p>
+<ul class='colophon__links'>
+<li><a href="https://openchronicles.org/books/robert-the-monk/">Open Chronicles — Robert the Monk volume page</a></li>
+</ul>
+</div>
+<p class="colophon__credit">Adapted for modern readers with AI assistance, edited by Paul McMurry</p>
+<p class="colophon__method">A narrative reader’s edition adapted from the Open Chronicles source-faithful translation with AI assistance; edited by Paul McMurry. No dialogue or events have been invented. Prefer the source-faithful translation for citation of exact wording.</p>
+<p class="colophon__based">Based on: <code>robert-the-monk-translation@1.0.0</code></p>
+<div class="colophon__block"><h3>Limitations</h3>
+<p>Derived from the source-faithful translation (narrative mode); not an independent second translation from the Latin. Condenses formula and doublets; a paragraph map documents coverage of all 187 production units. Does not sanitize medieval religious or military language. One verse reading remains marked uncertain (levis / bevis). Kempf &amp; Bull 2013 was not opened. Not a substitute for citation of exact wording. This release has not undergone external scholarly peer review.</p></div>
+<div class="colophon__block"><h3>Suggested citation</h3>
+<p class="colophon__citation">Robert the Monk, The History of Jerusalem (reader’s edition), adapted for modern readers with AI assistance, edited by Paul McMurry. Open Chronicles, volume 6, version 1.0.0, 2026. https://openchronicles.org/books/robert-the-monk/ CC BY 4.0.</p></div>
 <p class="colophon__license">License: <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
 <p class="colophon__copyright muted">Published as a human-edited edition prepared with AI assistance under CC BY 4.0.</p>
 <p class="colophon__version">Version 1.0.0 · 2026-09-13</p>

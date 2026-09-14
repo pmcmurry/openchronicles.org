@@ -40,6 +40,7 @@ Open http://localhost:8080
 | `books/john-the-oxite/john-the-oxite-speech-1.html` | Volume 5 reader’s browser edition |
 | `books/robert-the-monk/` | Volume 6 landing page |
 | `books/robert-the-monk/the-history-of-jerusalem.html` | Volume 6 source-faithful browser edition |
+| `books/robert-the-monk/the-history-of-jerusalem-readers.html` | Volume 6 reader’s browser edition |
 | `404.html` | Custom not-found page (GitHub Pages) |
 
 `branding.html` is an internal brand archive and is not listed in `sitemap.xml`.
